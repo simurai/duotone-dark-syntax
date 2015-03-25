@@ -1,0 +1,40 @@
+
+// Settings -----------------------------------
+
+@set-color-uno:  hsl(250, 100%, 50%);
+@set-color-duo:  hsl(30, 100%, 50%);
+@set-saturation: 0%; // -/+n%
+@set-contrast:   0%;
+
+
+// Config -----------------------------------
+
+@syntax-hue-uno:    hsvhue(@set-color-uno);
+@syntax-hue-duo:    hsvhue(@set-color-duo);
+@syntax-saturation: max(24% + @set-saturation, 0%); // limit to > 0%
+@syntax-brightness: 22%;
+@syntax-contrast:   @set-contrast * 0.1;
+
+
+// Base colors -----------------------------------
+
+@syntax-accent-color: hsl(@syntax-hue-duo, @set-saturation + 90%, (@syntax-brightness + (@syntax-contrast*10) + 40%) );
+@syntax-base-color:   hsv(@syntax-hue-uno, @syntax-saturation, @syntax-brightness);
+@syntax-text:         hsl(@syntax-hue-uno, @syntax-saturation, max(30%, (@syntax-brightness + @syntax-contrast) * 3) );
+@syntax-guide-color:  fade(@syntax-text, 15%);
+
+
+
+// Language colors -----------------------------------
+
+// Uno hue
+@uno-1: hsl(@syntax-hue-uno, @syntax-saturation*9, 74% + @syntax-brightness + @syntax-contrast*2);
+@uno-2: hsl(@syntax-hue-uno, @syntax-saturation*8, 64% + @syntax-brightness + @syntax-contrast*1.5);
+@uno-3: hsl(@syntax-hue-uno, @syntax-saturation*4, 56% + @syntax-brightness + @syntax-contrast*1.2);
+@uno-4: hsl(@syntax-hue-uno, @syntax-saturation/2, 24% + @syntax-brightness + @syntax-contrast);
+
+// Duo hue
+@duo-1: hsl(@syntax-hue-duo, @syntax-saturation*6, 58% + @syntax-brightness + @syntax-contrast*2);
+@duo-2: hsl(@syntax-hue-duo, @syntax-saturation*3, 40% + @syntax-brightness + @syntax-contrast*1.5);
+@duo-3: hsl(@syntax-hue-duo, @syntax-saturation  , 30% + @syntax-brightness + @syntax-contrast*1.2);
+@duo-4: hsl(@syntax-hue-duo, @syntax-saturation/4, 24% + @syntax-brightness + @syntax-contrast);

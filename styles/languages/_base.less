@@ -1,0 +1,66 @@
+
+// Language syntax highlighting
+
+.uno-1 { color: @uno-1; } // .... Strong
+.uno-2 { color: @uno-2; } // ...   |
+.uno-3 { color: @uno-3; } // ..    v
+.uno-4 { color: @uno-4; } // .    Weak
+
+.duo-1 { color: @duo-1; } // .... Strong
+.duo-2 { color: @duo-2; } // ...   |
+.duo-3 { color: @duo-3; } // ..    v
+.duo-4 { color: @duo-4; } // .    Weak
+
+
+// Uno hue -----------------------------------
+
+.html.elements,
+.entity,
+.tag {
+  .uno-1;
+}
+
+.variable,
+.html.attribute-name,
+.css.pseudo-element {
+  .uno-2();
+}
+
+.support {
+  .uno-3();
+}
+
+.source,
+.punctuation,
+.meta {
+  .uno-4();
+}
+
+
+// Duo hue -----------------------------------
+
+.string,
+.constant,
+.storage.type {
+  .duo-1();
+}
+
+.keyword {
+  .duo-2();
+}
+
+.comment {
+  .duo-4();
+}
+
+
+// Plain text -----------------------------------
+.plain .text {
+  .uno-1();
+}
+
+
+// Text styles -----------------------------------
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }

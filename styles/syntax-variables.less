@@ -1,0 +1,37 @@
+@import "colors";
+
+
+// Official Syntax Variables -----------------------------------
+
+// General colors
+@syntax-text-color:            @syntax-text;
+@syntax-cursor-color:          @syntax-accent-color;
+@syntax-selection-color:       desaturate( mix(@syntax-background-color, @syntax-accent-color, 80%), 16%);
+@syntax-selection-flash-color: @syntax-accent-color;
+@syntax-background-color:      darken(@syntax-base-color, @syntax-contrast);
+
+// Guide colors
+@syntax-wrap-guide-color:          @syntax-guide-color;
+@syntax-indent-guide-color:        @syntax-guide-color;
+@syntax-invisible-character-color: @syntax-guide-color;
+
+// For find and replace markers
+@syntax-result-marker-color:          @syntax-text-color;
+@syntax-result-marker-color-selected: @syntax-accent-color;
+
+// Gutter colors
+@syntax-gutter-text-color:                @uno-4;
+@syntax-gutter-text-color-selected:       @uno-3;
+@syntax-gutter-background-color:          transparent;
+@syntax-gutter-background-color-selected: hsla(@syntax-hue-uno, 100%,  80%, .04);
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed:  hsl(208, 100%, 60%);
+@syntax-color-added:    hsl(150,  60%, 54%);
+@syntax-color-modified: hsl(40,   60%, 70%);
+@syntax-color-removed:  hsl(0,    70%, 60%);
+
+
+// Custom Syntax Variables -----------------------------------
+
+@syntax-cursor-line: hsla(@syntax-hue-duo, 100%,  80%, .04); // needs to be semi-transparent to show serach results

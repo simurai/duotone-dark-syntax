@@ -1,2 +1,2 @@
-# duotone-dark-syntax
-DuoTone dark - A syntax theme for Atom
+# DuoTone dark
+## A Syntax theme for Atom
