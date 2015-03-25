@@ -1,0 +1,128 @@
+@import url("printstyle.css") print;
+
+@media screen and (max-width: 800px) {
+  ul:last-of-type { display: none; font-family: Open Sans;}
+}
+
+/* reset based on YUI 3.9.1 (build 5852) Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0 !important}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+
+/*deviations from the reset*/
+em { font-style: italic !important; }
+h1,h2,h3,h4,h5,h6 { font-weight:bold; color: red; }
+
+/*some basics*/
+html  { font-size: 16px; font-size: 100%; }
+h1    { font-size: 32px; font-size: 6rem; }
+h2    { font-size: 24px; font-size: 5rem; }
+h3    { font-size: 20px; font-size: 4rem; }
+h4    { font-size: 18px; font-size: 3rem; }
+h5    { font-size: 16px; font-size: 2rem; }
+h6    { font-size: 14px; font-size: 1.4rem; }
+
+/*fonts*/
+h8 {
+  font-family: 'Blackoak STD', serif;
+  color: red;
+  font-weight: 300;
+}
+p {
+  font-size: 24px; font-size: 1.5rem;
+  line-height: 1.2em;
+}
+
+p::selection { color: #fff; background-color: #ff00ff; }
+
+
+body { height: 100%; }
+
+h1,
+article h2,
+section h3 { line-height: 2em; } /*comment goes here*/
+
+h8 { color: blue; } /*non spec element*/
+
+div.styled {
+  position: relative;
+  width: 10px;
+  height: 100px;
+  background: #abc123 url('../folder/something.png');
+  -moz-opacity: 1.0;
+  -webkit-opacity: 1.0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1.0 !important;
+  transition: width 2s;
+  -moz-transition: width 2s;
+  -webkit-transition: width 2s;
+  -o-transition: width 2s;
+}
+
+@import url("printstyle.css") print;
+
+@media screen and (max-width: 800px) {
+  ul:last-of-type { display: none; }
+}
+
+@font-face {
+  font-family: "some typeface";
+  src: url("type/filename.eot");
+  src: local("☺"),
+    url("type/filename.woff") format("woff"),
+    url("type/filename.otf") format("opentype"),
+    url("type/filename.svg#filename") format("svg");
+}
+h2 { font-family: "some typeface", Georgia, serif; }
+
+div #something > .link a,
+div #something > .link a:link,
+div #something > .link a:visited,
+div #something > .link a:visited { text-decoration: none; }
+
+.element:first-child,
+ul:first-child li:nth-child(odd),
+form p *:not(textarea):not(label) { height: 20px; }
+
+select option.element[selected] { font-weight: bold; }
+select option.element[contenteditable~="true false"] { border: 1px solid #999; }
+
+
+@media (min-width: 700px) { ... }
+
+@media (min-width: 700px) and (orientation: landscape) { ... }
+
+@media tv and (min-width: 700px) and (orientation: landscape) { ... }
+
+@media (min-width: 700px), handheld and (orientation: landscape) { ... }
+
+@media all and (monochrome) { ... }
+
+@media all and (monochrome) { ... }
+@media all and (color) { ... }
+
+
+@media all and (min-monochrome: 8) { ... }
+
+@media all and (orientation: portrait) { ... }
+
+@media print and (min-resolution: 300dpi) { ... }
+
+@media screen and (min-resolution: 2dppx) { ... }
+
+@media tv and (scan: progressive) { ... }
+
+@media handheld and (min-width: 20em), screen and (min-width: 20em) { ... }

@@ -1,0 +1,439 @@
+@import url("printstyle.css") print;
+
+@mixin somestuff ($var, $something:#000) {
+
+}
+
+@media screen and (max-width: 800px) {
+  ul:last-of-type { display: none; }
+}
+
+/* reset based on YUI 3.9.1 (build 5852) Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+
+/*deviations from the reset*/
+em { font-style: italic; }
+h1,h2,h3,h4,h5,h6 { font-weight:bold; color: red; }
+
+/*some basics*/
+html	{ font-size: 16px; font-size: 100%; }
+h1		{ font-size: 32px; font-size: 6rem; }
+h2		{ font-size: 24px; font-size: 5rem; }
+h3		{ font-size: 20px; font-size: 4rem; }
+h4		{ font-size: 18px; font-size: 3rem; }
+h5		{ font-size: 16px; font-size: 2rem; }
+h6		{ font-size: 14px; font-size: 1.4rem; }
+
+/*fonts*/
+h1 {
+	font-family: 'Blackoak STD', serif;
+	color: red;
+	font-weight: 300;
+	@include text-shadow(rgba(blue, 0.2) 1px 1px 0);
+	color: darken(#333, 50%);
+}
+p {
+	font-size: 24px; font-size: 1.5rem;
+	line-height: 1.2em;
+}
+
+p::selection { color: #fff; background-color: #ff00ff; }
+
+
+body { height: 100%; }
+
+h1,
+article h2,
+section h3 { line-height: 2em; } /*comment goes here*/
+
+h8 { color: blue; } /*non spec element*/
+
+#header        { color: black;
+  .navigation  { font-size: 12px }
+  .logo        { width: 300px;
+    &:hover    { text-decoration: none; }
+  }
+}
+
+div.styled {
+	position: relative;
+	width: 10px;
+	height: 100px;
+	background: #abc123 url('../folder/something.png');
+	-moz-opacity: 1.0;
+	-webkit-opacity: 1.0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1.0 !important;
+	transition: width 2s;
+	-moz-transition: width 2s;
+	-webkit-transition: width 2s;
+	-o-transition: width 2s;
+}
+
+@import url("printstyle.css") print;
+
+@media screen and (max-width: 800px) {
+	ul:last-of-type { display: none; }
+}
+
+@if ($someVar == 0px) {
+  @for $i from 1 through 3 {
+    .item-#{$i} { width: 2em * $i; }
+  }
+}
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+
+@font-face {
+  font-family: "some typeface";
+  src: url("type/filename.eot");
+  src: local("☺"),
+    url("type/filename.woff") format("woff"),
+    url("type/filename.otf") format("opentype"),
+    url("type/filename.svg#filename") format("svg");
+}
+h2 { font-family: "some typeface", Georgia, serif; }
+
+div #something > .link a,
+div #something > .link a:link,
+div #something > .link a:visited,
+div #something > .link a:visited { text-decoration: underline; }
+
+h1,h2,h3,h4,h5,h6 { font-weight:bold; color: red; }
+
+
+.element:first-child,
+.element:::before,
+ul:first-child li:nth-child(odd),
+form p *:not(.textarea):not(label) { height: 20px; }
+
+select option.element[selected] { font-weight: bold; }
+select option.element[contenteditable~="true false"] { border: 1px solid #999; }
+
+@import url("printstyle.css") print;
+
+@media screen and (max-width: 800px) {
+  ul:last-of-type { display: none; }
+}
+
+@import
+"compass",  //boink
+"something" //boom
+"compass", "bla",      //kablow
+"something"; //boom
+
+
+@import "blueprint";
+@import "blueprint/fancy_type";
+
+$brand-error: #CC0000;
+
+
+$blueprint-grid-columns:     5;
+$blueprint-grid-width:       150px;
+$blueprint-grid-margin:      20px;
+
+$blueprint-font-family:      Helvetica Neue, Arial, Helvetica, sans-serif;
+$blueprint-fixed-font-family:'andale mono', 'lucida console', monospace;
+$blueprint-font-size:        12px;
+
+$text-color:                 #555555;
+$light-text-color:           #a0a0a0;
+$quote-text-color:           #f27a00;
+$disclosure-text-color:      #ed7c06;
+
+$thick-border:               8px solid black;
+$dotted-border:              1px dotted #999999;
+
+$header-background-color:    #f07c05;
+$paging-background-color:    black;
+$unfocused-background-color: #f1f0ec;
+$quote-background-color:     #f1f0ec;
+
+$story-title-color:          #f07c05;
+
+@include global-reset;
+@include blueprint-typography;
+
+body {
+  background: $unfocused-background-color image_url("white-bg.jpg") repeat-y 50% 0;
+  color: $text-color;
+  transition: width 2s;
+  -moz-transition: width 2s;
+  -webkit-transition: width 2s;
+  -o-transition: width 2s;
+}
+
+.content_wrapper {
+  @include container;
+  width: 910px;
+}
+
+#header {
+  height: 72px;
+  background: $header-background-color;
+  @include clearfix;
+
+  h1 {
+    color: white;
+    @include float-left;
+    a {
+      @include replace-text("logo.jpg");
+      width: 116px;
+      height: 72px;
+      display: block;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    @include horizontal-list;
+    padding: 0 0 0 25px;
+    li {
+      @include incr(18px);
+      padding: 0 20px 0 0;
+      text-transform: $uppercase;
+      a {
+        color: #febf0f;
+        text-decoration: none;
+        width: 100px;
+        height: 72px;
+        display: block;
+      }
+      &#header-threads a {
+        @include replace-text("header-threads-text.jpg");
+      }
+      &#header-timeline a {
+        @include replace-text("header-timeline-text.jpg");
+      }
+    }
+  }
+}
+
+#paging:after {
+  background: $paging-background-color;
+  height: 33px;
+  padding: 15px 0 0 0;
+
+  h6 {
+    @include float-left;
+    color: #908f8b;
+    padding-right: 20px;
+    text-transform: uppercase;
+    a {
+      color: #f07b07;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    @include horizontal-list;
+    li {
+      padding: 3px 4px;
+      a {
+        color: #4c4c4c;
+        @include replace-text("thread-paging-inactive-bullet.jpg");
+        width: 10px;
+        height: 10px;
+        display: block;
+      }
+      &.active a {
+        color: #f17d06;
+        background-image: image_@import "compass";
+      }
+    }
+  }
+}
+
+#content {
+    position: relative;
+    #previous {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: right;
+    }
+    #next {
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: left;
+    }
+}
+
+#thread {
+    @include container;
+  width: 910px;
+    top: 0px;
+    left: 0px;
+
+    @include transition-property(left);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+
+    @for $i from 0 through 30 {
+    &.position#{$i} {
+      left: ($i * -910px);
+    }
+  }
+}
+
+.js {
+  #content {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #thread {
+    padding: 0;
+    width: 5000px;
+    position: absolute;
+  }
+}
+
+.story {
+  @include float-left;
+  width: 810px;
+  padding: 0 50px;
+
+  h4.date {
+    @include float-right;
+    @include span(1);
+    background: $unfocused-background-color;
+    padding: 10px 20px;
+    @include border-radius(3px);
+  }
+
+  h1 {
+    padding: 40px 0 20px 0;
+    border-bottom: $thick-border;
+    color: $story-title-color;
+    @include incr(30px);
+  }
+
+  .artifacts {
+    @include column(3);
+
+    .row {
+      @include clearfix;
+      border-bottom: $dotted-border;
+      margin-bottom: $blueprint-grid-margin;
+    }
+
+    .artifact {
+      color: $light-text-color;
+      img {
+        margin-bottom: 0.5em;
+      }
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #0a83e0;
+      }
+    }
+
+    .threecol { @include column(3); }
+    .twocol   { @include column(2); }
+    .onecol   { @include column(1); }
+    .last     { @include last;      }
+  }
+
+  .information {
+    @include column(1.6, true);
+    border-bottom: $dotted-border;
+    margin-left: 40px;
+
+    h2 {
+      @include incr(20px, $blueprint-font-size, 35px);
+    }
+
+    .textblock p {
+      @include incr(13px, $blueprint-font-size, 26px);
+    }
+
+    .quote {
+      color: $quote-text-color;
+      blockquote {
+        @include incr(18px, $blueprint-font-size, 30px);
+        color: $quote-text-color;
+        margin: 0;
+        padding: 12px 18px;
+        background: $quote-background-color;
+        @include border-radius(5px);
+      }
+      cite {
+        display: block;
+        padding: 0.5em 18px 1.5em 18px;
+      }
+    }
+
+    .disclosure {
+      border-top: $dotted-border;
+      h5 {
+        padding: 10px 0;
+        margin: 0;
+        color: $disclosure-text-color;
+      }
+      p {
+        color: #a8a8a8;
+      }
+    }
+  }
+}
+
+#footer {
+  @include container;
+  background: white;
+  width: 810px;
+  padding: $blueprint-grid-margin 0;
+
+  .inner {
+    border-top: $thick-border;
+    padding: 30px 0;
+  }
+
+  p {
+    @include float-right;
+    @include incr(10px);
+    color: #b3b3b3;
+  }
+
+  ul {
+    @include horizontal-list;
+
+    li {
+      $somevar: 30;
+
+      padding: 0 30px 0 0;
+      a {
+        text-decoration: none;
+        color: #ef7a06;
+      }
+    }
+  }
+}
+
+
+@media all and (monochrome) { ... }
+@media all and (color) { ... }
