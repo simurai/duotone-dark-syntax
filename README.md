@@ -9,9 +9,11 @@ It only uses 2 hues, purple & gold and tries to:
 
 This hopefully leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
+__Note__: For the above reasons it might not work well with all languages.
+
 ![DuoTone dark](https://cloud.githubusercontent.com/assets/378023/6816353/7a04334c-d2d5-11e4-810a-3f04df77fec0.png)
 
-> Note: For the above reasons it might not work well with all languages.
+> The font in the screenshot is `Fira Mono`. You can download it from https://github.com/mozilla/Fira
 
 ### Currently optimized for these languages:
 
