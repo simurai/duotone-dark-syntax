@@ -20,5 +20,8 @@ This hopefully leads to a more calm color scheme, but still lets you find the st
 - GF Markdown
 - HTML
 - Less
+- XML
+- (La-)TeX
+- JSON
 
 More to come..
