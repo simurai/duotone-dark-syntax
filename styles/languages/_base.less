@@ -22,9 +22,17 @@
 
 // Uno hue -----------------------------------
 
+// this basically matches everything without a specific scope
+// so we put it first
+.source,
+.meta {
+  .uno-4;
+}
+
 .html.elements,
 .entity,
-.tag {
+.tag,
+.function-call {
   .uno-1;
 }
 
@@ -37,11 +45,6 @@
 
 .support {
   .uno-3;
-}
-
-.source, //this basically matches everything without a specific scope
-.meta {
-  .uno-4;
 }
 
 
