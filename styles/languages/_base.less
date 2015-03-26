@@ -11,13 +11,14 @@
 .duo-3 { color: @duo-3; } // ..    v
 .duo-4 { color: @duo-4; } // .    Weak
 
-.punctuation() {
+.punctuation(@color) {
   .punctuation,
   .bracket,
   .brace {
-    .uno-4();
+    color: @color;
   }
 }
+
 
 // Uno hue -----------------------------------
 
@@ -31,16 +32,16 @@
 .character.escape,
 .html.attribute-name,
 .css.pseudo-element {
-  .uno-2();
+  .uno-2;
 }
 
 .support {
-  .uno-3();
+  .uno-3;
 }
 
-.meta,
-.source {
-  .uno-4();
+// .source,
+.meta {
+  .uno-4;
 }
 
 
@@ -49,26 +50,33 @@
 .string,
 .constant,
 .storage.type {
-  .duo-1();
+  .duo-1;
+}
+.string .punctuation {
+  // I think it's better with the heavy quotes for some reason
+  .duo-1;
 }
 
 .keyword {
-  .duo-2();
-}
-
-.comment {
-  .duo-4();
+  .duo-2;
 }
 
 
 // Plain text -----------------------------------
 .plain .text {
-  .uno-1();
+  .uno-1;
 }
 
 
 // Punctuation -----------------------------------
-.punctuation();
+.punctuation(@duo-4);
+
+
+
+// Comments -----------------------------------
+.comment {
+  .duo-4;
+}
 
 
 // Text styles -----------------------------------
