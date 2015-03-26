@@ -10,6 +10,7 @@ var undefined,
     simpleExpr = /^#?([\w-]+)$/,
     idExpr     = /^#/,
     tagExpr    = /<([\w:]+)/,
+    rurl       = /^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,
     slice      = function (e) { return [].slice.call(e, 0); };
     try { var a = slice(document.documentElement.childNodes)[0].nodeType; }
     catch(e){ slice = function (e) { var ret=[]; for (var i=0; e[i]; i++)
@@ -29,3 +30,23 @@ function doSomething(something) {
         something = "something";
     }
 }
+
+jQuery.each( [ "get", "post" ], function( i, method ) {
+	jQuery[ method ] = function( url, data, callback, type ) {
+		// Shift arguments if data argument was omitted
+		if ( jQuery.isFunction( data ) ) {
+			type = type || callback;
+			callback = data;
+			data = undefined;
+		}
+
+		return jQuery.ajax({
+			url: url,
+			type: method,
+			numer: 1000,
+			dataType: type,
+			data: data,
+			success: callback
+		});
+	};
+});

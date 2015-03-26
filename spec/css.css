@@ -1,3 +1,11 @@
+/* reset based on YUI 3.9.1 (build 5852) Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+
+
+@import url("printstyle.css") print;
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   body:first-of-type pre::after {
     content: 'highlight: ' attr(class);
@@ -20,7 +28,12 @@ div.text,
 #content,
 li[lang=ru] {
   font: Tahoma, Chunkfive, sans-serif;
-  background: url('hatch.png') /* wtf? */;
+  background: red url('hatch.png') /* wtf? */;
   color: #F0F0F0 !important;
   width: 100%;
+}
+
+
+@media all and (min-monochrome: 8) {
+
 }

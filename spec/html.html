@@ -5,12 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+      function doSomething(something) {
+          if (nothing == "something") {
+              //do something
+          } else {
+              $(this).goFunky(function(){
+                  $("#henk > .piet").css({'width': 200});
+              });
+              something = "something";
+          }
+      }
+
+    </script>
+
   </head>
   <body>
 
     <div>
       <h1>HTML sample</h1>
+      <!-- <h2>HTML sample</h2> -->
     </div>
+    <ul id="user-links">
+      <li>
+        <a href="https://github.com/braver" class="name">
+          <img height="20" src="https://secure.gravatar.com/avatar/47999e09d51fb0ffdc005483b5ea3b09?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="20" /> braver
+        </a>
+      </li>
+    </ul>
 
     <script src="js/main.js"></script>
   </body>
