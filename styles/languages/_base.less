@@ -11,7 +11,7 @@
 .duo-3 { color: @duo-3; } // ..    v
 .duo-4 { color: @duo-4; } // .    Weak
 
-.punctuation(@color) {
+.punctuation-mixin(@color:@uno-4) {
   .punctuation,
   .bracket,
   .brace {
@@ -69,7 +69,7 @@
 
 
 // Punctuation -----------------------------------
-.punctuation(@duo-4);
+.punctuation-mixin();
 
 
 
