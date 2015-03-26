@@ -31,6 +31,8 @@ function doSomething(something) {
     }
 }
 
+doSomething();
+
 jQuery.each( [ "get", "post" ], function( i, method ) {
 	jQuery[ method ] = function( url, data, callback, type ) {
 		// Shift arguments if data argument was omitted
