@@ -11,6 +11,13 @@
 .duo-3 { color: @duo-3; } // ..    v
 .duo-4 { color: @duo-4; } // .    Weak
 
+.punctuation() {
+  .punctuation,
+  .bracket,
+  .brace {
+    .uno-4();
+  }
+}
 
 // Uno hue -----------------------------------
 
@@ -20,9 +27,7 @@
   .uno-1;
 }
 
-.meta,
 .variable,
-.source,
 .character.escape,
 .html.attribute-name,
 .css.pseudo-element {
@@ -33,9 +38,8 @@
   .uno-3();
 }
 
-// .source,
-.punctuation,
-.brace {
+.meta,
+.source {
   .uno-4();
 }
 
@@ -61,6 +65,10 @@
 .plain .text {
   .uno-1();
 }
+
+
+// Punctuation -----------------------------------
+.punctuation();
 
 
 // Text styles -----------------------------------
