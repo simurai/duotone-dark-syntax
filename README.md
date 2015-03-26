@@ -15,21 +15,21 @@ This hopefully leads to a more calm color scheme, but still lets you find the st
 
 ### Currently tested and optimized for these languages:
 
-- CoffeeScript
-- CSS
-- GF Markdown
-- HTML
-- Less
-- XML
-- (La-)TeX
-- JSON
-- YAML
 - C
-- SCSS
-- SASS (grammar needs work though)
-- Python
-- Perl
-- Ruby
+- CSS
+- CoffeeScript
+- GF Markdown
 - Go
+- HTML
+- JSON
+- (La-)TeX
+- Less
+- Perl
+- Python
+- Ruby
+- SASS
+- SCSS
+- XML
+- YAML
 
 More optimization to come..
