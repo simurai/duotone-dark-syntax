@@ -23,5 +23,6 @@ This hopefully leads to a more calm color scheme, but still lets you find the st
 - XML
 - (La-)TeX
 - JSON
+- YAML
 
 More to come..
