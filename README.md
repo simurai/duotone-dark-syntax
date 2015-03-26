@@ -13,7 +13,7 @@ This hopefully leads to a more calm color scheme, but still lets you find the st
 
 > Note: For the above reasons it might not work well with all languages.
 
-### Currently optimized for these languages:
+### Currently tested and optimized for these languages:
 
 - CoffeeScript
 - CSS
@@ -24,5 +24,12 @@ This hopefully leads to a more calm color scheme, but still lets you find the st
 - (La-)TeX
 - JSON
 - YAML
+- C
+- SCSS
+- SASS (grammar needs work though)
+- Python
+- Perl
+- Ruby
+- Go
 
-More to come..
+More optimization to come..
