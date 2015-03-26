@@ -45,6 +45,8 @@ class Enum {
     }
 }
 
+Enum->__get();
+
 class DefinedEnum extends Enum {
     public function __construct( /*array*/ $itms ) {
         foreach( $itms as $name => $enum )
@@ -140,6 +142,7 @@ function foo()
 		echo "I don't exist until foo() is called.\n";
 	}
 }
+foo();
 $array = array(
     "foo" => "bar",
     "bar" => "foo",

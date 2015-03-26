@@ -25,6 +25,7 @@ This hopefully leads to a more calm color scheme, but still lets you find the st
 - (La-)TeX
 - Less
 - Perl
+- PHP
 - Python
 - Ruby
 - SASS
