@@ -98,7 +98,7 @@ end
 
 if c['rubylibdir']
     # V > 1.6.3
-    libruby         = "#{c['prefix']}/lib/ruby""
+    libruby         = "#{c['prefix']}/lib/ruby"
     siterubyverarch = c['sitearchdir']
 end
 parameterize = lambda {|path|
