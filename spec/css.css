@@ -20,7 +20,7 @@ div.text,
 #content,
 li[lang=ru] {
   font: Tahoma, Chunkfive, sans-serif;
-  background: red url('hatch.png') /* wtf? */;
+  background: url('hatch.png') /* wtf? */;
   color: #F0F0F0 !important;
   width: 100%;
 }
