@@ -1,4 +1,6 @@
-<img alt="DuoTone dark" style="max-width: 272px" src="https://cloud.githubusercontent.com/assets/378023/6995981/3d455d76-dba6-11e4-9740-23202591201b.png">
+<img alt="DuoTone dark" sizes="272px"
+  src="https://cloud.githubusercontent.com/assets/378023/6996305/4d567190-dbbb-11e4-8ae8-4be016a85c68.png"
+  srcset="https://cloud.githubusercontent.com/assets/378023/6995981/3d455d76-dba6-11e4-9740-23202591201b.png 544w">
 
 A double-hue syntax theme for Atom.
 
