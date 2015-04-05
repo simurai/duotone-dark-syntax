@@ -1,26 +1,18 @@
-# DuoTone dark
+<img alt="DuoTone dark" style="max-width: 272px" src="https://cloud.githubusercontent.com/assets/378023/6995981/3d455d76-dba6-11e4-9740-23202591201b.png">
 
-DuoTone dark is a syntax theme for Atom.
+A double-hue syntax theme for Atom.
 
-It only uses 2 hues, purple & gold and tries to:
+DuoTone dark uses only 2 hues (purple & gold) and 7 colors in total. It __tones down__ less important parts (like punctuation, brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
-1. Highlight only the __important__ parts
-2. __Tone down__ less important parts. Like punctuation, brackets etc.
+![duotone-dark-css](https://cloud.githubusercontent.com/assets/378023/6996081/4dc96804-dbab-11e4-95f9-cc06a67452cb.png)
 
-This hopefully leads to a more calm color scheme, but still lets you find the stuff you're looking for.
+#### Optimized for these languages:
 
-__Note__: For the above reasons it might not work well with all languages.
+- [x] CoffeeScript
+- [x] CSS
+- [x] GF Markdown
+- [x] HTML
+- [x] Less
+- [ ] More to come..
 
-![DuoTone dark](https://cloud.githubusercontent.com/assets/378023/6816353/7a04334c-d2d5-11e4-810a-3f04df77fec0.png)
-
-> The font in the screenshot is `Fira Mono`. You can download it from https://github.com/mozilla/Fira
-
-### Currently optimized for these languages:
-
-- CoffeeScript
-- CSS
-- GF Markdown
-- HTML
-- Less
-
-More to come..
+> ps. The font in the screenshot is `Fira Mono`. You can download it from https://github.com/mozilla/Fira
