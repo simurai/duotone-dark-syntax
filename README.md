@@ -8,8 +8,6 @@ A double-hue syntax theme for Atom.
 
 DuoTone dark uses only 2 hues (purple & gold) and 7 shades in total. It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
-![duotone-dark-css]()
-
 <img alt="CSS in DuoTone dark" sizes="780px"
   src="https://cloud.githubusercontent.com/assets/378023/6996868/871b6440-dbdd-11e4-834e-b28363026d0c.png"
   srcset="https://cloud.githubusercontent.com/assets/378023/6996081/4dc96804-dbab-11e4-95f9-cc06a67452cb.png 1560w">
