@@ -3,6 +3,13 @@
   "theme": "syntax",
   "version": "0.1.0",
   "description": "A dark syntax theme",
+  "keywords": [
+    "dark",
+    "purple",
+    "gold",
+    "duotone",
+    "syntax"
+  ],
   "repository": "https://github.com/simurai/duotone-dark-syntax",
   "license": "MIT",
   "engines": {
