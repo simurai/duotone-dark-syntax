@@ -8,8 +8,7 @@
 
 .duo-1 { color: @duo-1; } // .... Strong
 .duo-2 { color: @duo-2; } // ...   |
-.duo-3 { color: @duo-3; } // ..    v
-.duo-4 { color: @duo-4; } // .    Weak
+.duo-3 { color: @duo-3; } // .    Weak
 
 .punctuation-mixin(@color:@uno-4) {
   .punctuation,
@@ -60,12 +59,9 @@
   .duo-1();
 }
 
-.keyword {
-  .duo-2();
-}
-
+.keyword,
 .storage {
-  .duo-3();
+  .duo-2();
 }
 
 // Plain text -----------------------------------
@@ -81,7 +77,7 @@
 
 // Comments -----------------------------------
 .comment {
-  .duo-4();
+  .duo-3();
 }
 
 
