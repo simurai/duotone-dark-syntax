@@ -8,19 +8,38 @@
 
 .duo-1 { color: @duo-1; } // .... Strong
 .duo-2 { color: @duo-2; } // ...   |
-.duo-3 { color: @duo-3; } // ..    v
-.duo-4 { color: @duo-4; } // .    Weak
+.duo-3 { color: @duo-3; } // .    Weak
+
+.punctuation-mixin(@color:@uno-4) {
+  .punctuation,
+  .bracket,
+  .brace {
+    color: @color;
+  }
+  .string .punctuation {
+    .duo-3();
+  }
+}
 
 
 // Uno hue -----------------------------------
 
+// this basically matches everything without a specific scope
+// so we put it first
+.source,
+.meta {
+  .uno-4();
+}
+
 .html.elements,
 .entity,
-.tag {
-  .uno-1;
+.tag,
+.function-call {
+  .uno-1();
 }
 
 .variable,
+.character.escape,
 .html.attribute-name,
 .css.pseudo-element {
   .uno-2();
@@ -28,12 +47,6 @@
 
 .support {
   .uno-3();
-}
-
-.source,
-.punctuation,
-.meta {
-  .uno-4();
 }
 
 
@@ -45,18 +58,25 @@
   .duo-1();
 }
 
-.keyword {
+.keyword,
+.storage {
   .duo-2();
 }
-
-.comment {
-  .duo-4();
-}
-
 
 // Plain text -----------------------------------
 .plain .text {
   .uno-1();
+}
+
+
+// Punctuation -----------------------------------
+.punctuation-mixin();
+
+
+
+// Comments -----------------------------------
+.comment {
+  .duo-3();
 }
 
 
