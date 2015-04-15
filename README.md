@@ -17,8 +17,6 @@ DuoTone dark uses only 2 hues (purple & gold) and 7 shades in total. It __tones 
   srcset="https://cloud.githubusercontent.com/assets/378023/6996875/b2160e02-dbdd-11e4-913e-7dc006437d94.png 1560w">
 
 
-#### Optimized for these languages:
-
 ### Currently tested and optimized for these languages:
 
 - C
