@@ -6,7 +6,7 @@
 // General colors
 @syntax-text-color:            @syntax-fg;
 @syntax-cursor-color:          @syntax-accent;
-@syntax-selection-color:       desaturate( mix(@syntax-background-color, @syntax-accent, 80%), 16%);
+@syntax-selection-color:       lighten(@syntax-background-color, 12%);
 @syntax-selection-flash-color: @syntax-accent;
 @syntax-background-color:      @syntax-bg;
 
@@ -34,4 +34,4 @@
 
 // Custom Syntax Variables -----------------------------------
 
-@syntax-cursor-line: fade(@syntax-accent, 4%); // needs to be semi-transparent to show serach results
+@syntax-cursor-line: fade(@syntax-selection-color, 26%); // needs to be semi-transparent to show serach results
