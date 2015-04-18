@@ -1,39 +1,25 @@
-
-// Settings -----------------------------------
-
-@set-color-uno:  hsl(250, 100%, 50%);
-@set-color-duo:  hsl(30, 100%, 50%);
-@set-saturation: 0%; // -/+n%
-@set-contrast:   0%;
-
-
-// Config -----------------------------------
-
-@syntax-hue-uno:    hsvhue(@set-color-uno);
-@syntax-hue-duo:    hsvhue(@set-color-duo);
-@syntax-saturation: max(24% + @set-saturation, 0%); // limit to > 0%
-@syntax-brightness: 22%;
-@syntax-contrast:   @set-contrast * 0.1;
+// Hues -----------------------------------
+@syntax-uno:    220;
+@syntax-duo:    30;
 
 
 // Base colors -----------------------------------
-
-@syntax-accent-color: hsl(@syntax-hue-duo, @set-saturation + 90%, (@syntax-brightness + (@syntax-contrast*10) + 40%) );
-@syntax-base-color:   hsv(@syntax-hue-uno, @syntax-saturation, @syntax-brightness);
-@syntax-text:         @uno-2;
-@syntax-guide-color:  lighten(@syntax-base-color, 10%);
+@syntax-accent: hsl(@syntax-duo, 88%, 72%);
+@syntax-fg:     @uno-2;
+@syntax-bg:     hsl(@syntax-uno, 13%, 19%);
+@syntax-guide:  lighten(@syntax-bg, 10%);
 
 
 
 // Language colors -----------------------------------
 
 // Uno hue
-@uno-1: hsl(@syntax-hue-uno, @syntax-saturation*9, 74% + @syntax-brightness + @syntax-contrast*2);
-@uno-2: hsl(@syntax-hue-uno, @syntax-saturation*8, 64% + @syntax-brightness + @syntax-contrast*1.5);
-@uno-3: hsl(@syntax-hue-uno, @syntax-saturation*4, 56% + @syntax-brightness + @syntax-contrast*1.2);
-@uno-4: hsl(@syntax-hue-uno, @syntax-saturation/2, 24% + @syntax-brightness + @syntax-contrast);
+@uno-1: hsl(@syntax-uno, 100%, 96%);
+@uno-2: hsl(@syntax-uno, 100%, 86%);
+@uno-3: hsl(@syntax-uno,  96%, 78%);
+@uno-4: hsl(@syntax-uno,  12%, 46%);
 
 // Duo hue
-@duo-1: hsl(@syntax-hue-duo, @syntax-saturation*6, 58% + @syntax-brightness + @syntax-contrast*2);
-@duo-2: hsl(@syntax-hue-duo, @syntax-saturation*3, 40% + @syntax-brightness + @syntax-contrast*1.5);
-@duo-3: hsl(@syntax-hue-duo, @syntax-saturation/4, 24% + @syntax-brightness + @syntax-contrast);
+@duo-1: hsl(@syntax-duo, 100%, 80%);
+@duo-2: hsl(@syntax-duo,  72%, 62%);
+@duo-3: hsl(@syntax-duo,   6%, 46%);
