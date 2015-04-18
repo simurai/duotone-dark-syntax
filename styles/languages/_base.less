@@ -1,4 +1,3 @@
-
 // Language syntax highlighting
 
 .uno-1 { color: @uno-1; } // .... Strong
@@ -10,6 +9,8 @@
 .duo-2 { color: @duo-2; } // ...   |
 .duo-3 { color: @duo-3; } // .    Weak
 
+
+// Mixins -----------------------------------
 .punctuation-mixin(@color:@uno-4) {
   .punctuation,
   .bracket,
@@ -50,7 +51,6 @@
 
 
 // Duo hue -----------------------------------
-
 .string,
 .constant,
 .storage.type {
@@ -63,10 +63,8 @@
 }
 
 
-
 // Punctuation -----------------------------------
 .punctuation-mixin();
-
 
 
 // Comments -----------------------------------
@@ -76,6 +74,5 @@
 
 
 // Text styles -----------------------------------
-
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
