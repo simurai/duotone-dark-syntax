@@ -12,6 +12,7 @@
   ],
   "repository": "https://github.com/simurai/duotone-dark-syntax",
   "license": "MIT",
+  "main": "./lib/duotone",
   "engines": {
     "atom": ">0.50.0"
   }
