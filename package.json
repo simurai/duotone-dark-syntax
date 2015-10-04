@@ -2,7 +2,7 @@
   "name": "duotone-dark-syntax",
   "theme": "syntax",
   "version": "0.2.0",
-  "description": "A dark syntax theme",
+  "description": "A dark DuoTone syntax theme",
   "keywords": [
     "dark",
     "purple",
@@ -13,6 +13,6 @@
   "repository": "https://github.com/simurai/duotone-dark-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">1.0.0"
   }
 }
