@@ -6,7 +6,7 @@
 // General colors
 @syntax-text-color:            @syntax-fg;
 @syntax-cursor-color:          @syntax-accent;
-@syntax-selection-color:       lighten(@syntax-background-color, 12%);
+@syntax-selection-color:       @syntax-selection;
 @syntax-selection-flash-color: @syntax-accent;
 @syntax-background-color:      @syntax-bg;
 
@@ -23,15 +23,10 @@
 @syntax-gutter-text-color:                @uno-4;
 @syntax-gutter-text-color-selected:       @uno-3;
 @syntax-gutter-background-color:          transparent;
-@syntax-gutter-background-color-selected: lighten(@syntax-background-color, 3%);
+@syntax-gutter-background-color-selected: @syntax-selection-gutter;
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed:  hsl(208, 100%, 60%);
 @syntax-color-added:    hsl(150,  60%, 54%);
 @syntax-color-modified: hsl(40,   60%, 70%);
 @syntax-color-removed:  hsl(0,    70%, 60%);
-
-
-// Custom Syntax Variables -----------------------------------
-
-@syntax-cursor-line: fade(@syntax-selection-color, 26%); // needs to be semi-transparent to show serach results
