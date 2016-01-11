@@ -4,13 +4,44 @@
   .uno-1();
   .punctuation-mixin();
 
-  &.markup,
-  & .link {
+  .link {
     .uno-2();
   }
-  &.markup.raw,
-  &.markup .support {
-    .duo-3();
+
+  &.markup {
+    .uno-2();
+
+    &.bold   { .bold(); }
+    &.italic { .italic(); }
+    &.strike {
+      .uno-4();
+      text-decoration: line-through;
+    }
+
+    &.raw {
+      .duo-1(); // Fenced code blocks
+    }
+
+    &.raw .support,
+    &.code .support {
+      .uno-4(); // Fenced code blocks
+    }
+  }
+
+  &.comment  {
+    .uno-4();
+    &.quote {
+      .uno-2();
+    }
+  }
+
+  &.table {
+    .duo-1();
+
+    .border,
+    .pipe {
+      .uno-4();
+    }
   }
 
   &.variable,
@@ -18,7 +49,6 @@
     .duo-1();
   }
   &.support  { .duo-2(); }
-  &.comment  { .duo-3(); }
 
   &.heading-1 { .duo-1(); }
   &.heading-2 { .duo-2(); }
@@ -27,6 +57,4 @@
   &.heading-5 { .uno-3(); }
   &.heading-6 { .uno-4(); }
 
-  &.bold   { .bold(); }
-  &.italic { .italic(); }
 }
