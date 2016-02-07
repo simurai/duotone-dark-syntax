@@ -19,33 +19,19 @@ DuoTone dark uses only 2 hues (purple & gold) and has 7 shades in total. It __to
 > The font in the screenshot is `Fira Mono`. You can download it from https://github.com/mozilla/Fira
 
 
-### Currently tested and optimized for these languages:
+## Language support
 
-- C
-- Clojure
-- CoffeeScript
-- C#
-- CSS
-- GF Markdown
-- Go
-- Haskell
-- HTML
-- Java
-- JavaScript
-- JSON
-- Less
-- Perl
-- PHP
-- Python
-- Ruby
-- SASS
-- SCSS
-- Stylus
-- (La-)TeX
-- XML
-- YAML
+DuoTone themes are optimized for many languages:
 
-More optimization to come..
+> C, Clojure, CoffeeScript, C#, CSS, GF Markdown, Go, Haskell, HTML, Java, JavaScript, JSON, Less, Perl, PHP, Python, Ruby, SASS, SCSS, Stylus, XML, YAML...
+
+More optimizations to come. See the growing list of [all languages](/styles/languages).
+
+
+## Variations
+
+Here a list for all [DuoTone themes](https://atom.io/themes/search?utf8=%E2%9C%93&q=keyword:duotone). Or at least the ones that have the `duotone` keyword added. :grin:
+
 
 ### Issues and contributing
 
