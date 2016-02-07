@@ -25,8 +25,6 @@ atom-text-editor,
 
   .bracket-matcher .region {
     border-bottom: 1px solid @syntax-accent;
-    margin-top: -1px;
-    opacity: .7;
   }
 
   .invisible-character {
@@ -40,6 +38,21 @@ atom-text-editor,
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
+  }
+
+  // find + replace
+  .find-result .region.region.region,
+  .current-result .region.region.region {
+    border-radius: 0px;
+    background-color: @syntax-result-marker-color;
+    transition: border-color .4s;
+  }
+  .find-result .region.region.region {
+    border: 2px solid transparent;
+  }
+  .current-result .region.region.region {
+    border: 2px solid @syntax-result-marker-color-selected;
+    transition-duration: .1s;
   }
 
   .gutter {
