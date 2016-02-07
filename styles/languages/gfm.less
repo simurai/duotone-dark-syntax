@@ -50,11 +50,15 @@
   }
   &.support  { .duo-2(); }
 
-  &.heading-1 { .duo-1(); }
-  &.heading-2 { .duo-2(); }
-  &.heading-3 { .uno-1(); }
-  &.heading-4 { .uno-2(); }
-  &.heading-5 { .uno-3(); }
-  &.heading-6 { .uno-4(); }
+  &.heading-1,
+  &.heading-2,
+  &.heading-3 {
+    .duo-1();
+  }
+  &.heading-4,
+  &.heading-5,
+  &.heading-6 {
+    .duo-2();
+  }
 
 }
