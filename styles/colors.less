@@ -1,30 +1,12 @@
 
-// DuoTone dark 01
+// DuoTone dark
 
-// Hues -----------------------------------
-@syntax-uno:    250;
-@syntax-duo:    30;
+@syntax-hue:              250;
 
-
-// Language colors -----------------------------------
-
-// Uno hue
-@uno-1: hsl(@syntax-uno, 100%, 96%);
-@uno-2: hsl(@syntax-uno,  98%, 86%);
-@uno-3: hsl(@syntax-uno,  96%, 78%);
-@uno-4: hsl(@syntax-uno,  12%, 46%);
-
-// Duo hue
-@duo-1: hsl(@syntax-duo, 100%, 80%);
-@duo-2: hsl(@syntax-duo,  72%, 62%);
-@duo-3: hsl(@syntax-duo,   6%, 46%);
-
-
-// Base colors -----------------------------------
-@syntax-fg:               @uno-2;
-@syntax-bg:               hsl(@syntax-uno, 14%, 18%);
-@syntax-accent:           hsl(@syntax-duo, 100%, 66%);
+@syntax-fg:               hsl(@syntax-hue, 66%, 80%);
+@syntax-bg:               hsl(@syntax-hue, 12%, 18%);
+@syntax-accent:           hsl(@syntax-hue, 100%, 72%);
 @syntax-guide:            lighten(@syntax-bg, 10%);
 @syntax-selection:        lighten(@syntax-bg, 12%);
 @syntax-selection-gutter: lighten(@syntax-bg, 3%);
-@syntax-cursor-line:      fade(@syntax-selection, 26%); // needs to be semi-transparent to show serach results
+@syntax-cursor-line:      fade(@syntax-selection, 26%); // needs to be semi-transparent to show search results

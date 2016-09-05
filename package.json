@@ -12,7 +12,38 @@
   ],
   "repository": "https://github.com/simurai/duotone-dark-syntax",
   "license": "MIT",
+  "main": "lib/duotone",
   "engines": {
-    "atom": ">1.0.0"
+    "atom": ">1.9.0"
+  },
+  "dependencies": {
+    "duotone-syntax": "2.0.0",
+    "chroma-js": "1.1.1"
+  },
+  "configSchema": {
+    "preset": {
+      "title": "Color palette",
+      "description": "Choose one of the presets.",
+      "order": 1,
+      "type": [
+        "string"
+      ],
+      "enum": ["Dark Sky", "Dark Sea", "Dark Space", "Dark Forest", "Dark Earth", "Custom"],
+      "default": "Dark Sky"
+    },
+    "unoColor": {
+      "title": "Uno",
+      "description": "Customize the main color",
+      "order": 2,
+      "type": "color",
+      "default": "#6A6E8B"
+    },
+    "duoColor": {
+      "title": "Duo",
+      "description": "Customize the accent color",
+      "order": 3,
+      "type": "color",
+      "default": "#DA8FFF"
+    }
   }
 }

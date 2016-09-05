@@ -1,0 +1,38 @@
+@import "colors";
+
+// Custom settings
+.theme-duotone-dark-syntax .settings-view {
+  .color {
+    display: none;
+    .theme-duotone-dark-syntax--custom-colors & {
+      display: block;
+    }
+  }
+
+  [id="duotone-dark-syntax.preset"] {
+    margin-top: 1em;
+    height: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: center bottom;
+    background-image: linear-gradient(to right,
+      var(--uno-1) 12.5%,
+      var(--uno-2) 12.5%, var(--uno-2) 25%,
+      var(--uno-3) 25%,   var(--uno-3) 37.5%,
+      var(--uno-4) 37.5%, var(--uno-4) 50%,
+      var(--uno-5) 50%,   var(--uno-5) 62.5%,
+      var(--duo-1) 62.5%, var(--duo-1) 75%,
+      var(--duo-2) 75%,   var(--duo-2) 87.5%,
+      var(--duo-3) 87.5%
+    );
+  }
+
+  input[type="color"] {
+    position: absolute;
+    height: 4em;
+    border-radius: 4em;
+    &::-webkit-color-swatch {
+      border-radius: inherit;
+    }
+  }
+}
