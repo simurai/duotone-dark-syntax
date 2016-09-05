@@ -12,20 +12,20 @@ module.exports =
       root.classList.remove('theme-duotone-dark-syntax--custom-colors')
       switch newValue
         when "Dark Sky"
-          uno = 'hsl(250, 58%, 72%)'
-          duo = 'hsl( 30, 99%, 78%)'
+          uno = 'hsl(250, 22%, 62%)'
+          duo = 'hsl(33, 86%, 74%)'
         when "Dark Sea"
-          uno = 'hsl(212, 48%, 60%)'
-          duo = 'hsl(160, 99%, 70%)'
+          uno = 'hsl(212, 54%, 62%)'
+          duo = 'hsl(154, 92%, 70%)'
         when "Dark Space"
-          uno = 'hsl(240, 66%, 77%)'
-          duo = 'hsl( 20, 99%, 66%)'
+          uno = 'hsl(228, 69%, 76%)'
+          duo = 'hsl(345, 100%, 60%)'
         when "Dark Forest"
           uno = 'hsl(120, 28%, 70%)'
           duo = 'hsl( 70, 99%, 76%)'
         when "Dark Earth"
-          uno = 'hsl(24, 40%, 60%)'
-          duo = 'hsl(42, 99%, 70%)'
+          uno = 'hsl(352, 18%, 53%)'
+          duo = 'hsl(32, 100%, 69%)'
         when "Custom"
           root.classList.add('theme-duotone-dark-syntax--custom-colors')
           uno = atom.config.get('duotone-dark-syntax.unoColor').toHexString()
@@ -51,9 +51,9 @@ setColors = ->
   unsetColors() # prevents adding endless properties
 
   # Color limits
-  _high = chroma.mix( uno, 'hsl(0,0%,100%)', 0.5); # mix with white
+  _high = chroma.mix( uno, 'hsl(0,0%,100%)', 0.75); # mix with white
   _mid  = uno
-  _low  = chroma.mix(uno, 'hsl(0,0%,25%)', 0.25); # mix with dark grey
+  _low  = chroma.mix( uno, 'hsl(0,0%,20%)', 0.75); # mix with dark grey
 
   # Color scales
   _scaleUno = chroma.scale([ _high, _mid, _low]).colors(5)
