@@ -50,22 +50,25 @@ module.exports =
 setColors = ->
   unsetColors() # prevents adding endless properties
 
-  # Color limits
-  _high = chroma.mix( uno, 'hsl(0,0%,100%)', 0.75); # mix with white
-  _mid  = uno
-  _low  = chroma.mix( uno, 'hsl(0,0%,20%)', 0.75); # mix with dark grey
+  # Color mixing
+  _unoHigh = chroma.mix( uno, 'hsl(250, 0%, 100%)', 0.75); # mix with white
+  _unoMid  = uno                                           # set by user
+  _unoLow  = chroma.mix( uno, 'hsl(250, 12%, 18%)', 0.75); # mix with background (@syntax-bg)
+
+  _duoHigh = duo                                           # set by user
+  _duoLow  = chroma.mix( duo, 'hsl(250, 12%, 18%)', 0.66); # mix with background (@syntax-bg)
 
   # Color scales
-  _scaleUno = chroma.scale([ _high, _mid, _low]).colors(5)
-  _scaleDuo = chroma.scale([ duo, _low]).padding([0, 0.33]).colors(3)
+  _scaleUno = chroma.scale([_unoHigh, _unoMid, _unoLow]).colors(5)
+  _scaleDuo = chroma.scale([_duoHigh,          _duoLow]).colors(3)
 
   root.style.setProperty('--uno-1', _scaleUno[0])
   root.style.setProperty('--uno-2', _scaleUno[1])
-  root.style.setProperty('--uno-3', _scaleUno[2])
+  root.style.setProperty('--uno-3', _scaleUno[2]) # <- set by user
   root.style.setProperty('--uno-4', _scaleUno[3])
   root.style.setProperty('--uno-5', _scaleUno[4])
 
-  root.style.setProperty('--duo-1', _scaleDuo[0])
+  root.style.setProperty('--duo-1', _scaleDuo[0]) # <- set by user
   root.style.setProperty('--duo-2', _scaleDuo[1])
   root.style.setProperty('--duo-3', _scaleDuo[2])
 
