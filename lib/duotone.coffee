@@ -6,17 +6,17 @@ duo = ''
 
 module.exports =
   activate: (state) ->
-    uno = atom.config.get('duotone-dark-syntax.unoColor').toHexString()
-    duo = atom.config.get('duotone-dark-syntax.duoColor').toHexString()
+    uno = atom.config.get('duotone-dark-syntax.color.uno').toHexString()
+    duo = atom.config.get('duotone-dark-syntax.color.duo').toHexString()
     setColors()
 
     # Change Uno
-    atom.config.onDidChange 'duotone-dark-syntax.unoColor', ({newValue, oldValue}) ->
+    atom.config.onDidChange 'duotone-dark-syntax.color.uno', ({newValue, oldValue}) ->
       uno = newValue.toHexString()
       setColors()
 
     # Change Duo
-    atom.config.onDidChange 'duotone-dark-syntax.duoColor', ({newValue, oldValue}) ->
+    atom.config.onDidChange 'duotone-dark-syntax.color.duo', ({newValue, oldValue}) ->
       duo = newValue.toHexString()
       setColors()
 

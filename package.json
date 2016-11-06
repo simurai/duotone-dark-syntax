@@ -21,19 +21,25 @@
     "chroma-js": "1.1.1"
   },
   "configSchema": {
-    "unoColor": {
-      "title": "Uno",
-      "description": "Customize the main color",
-      "order": 1,
-      "type": "color",
-      "default": "#666180"
-    },
-    "duoColor": {
-      "title": "Duo",
-      "description": "Customize the accent color",
-      "order": 2,
-      "type": "color",
-      "default": "#FA70FF"
+    "color": {
+      "title": "Custom Colors",
+      "type": "object",
+      "properties": {
+        "uno": {
+          "title": "Uno",
+          "description": "Customize the main color",
+          "order": 1,
+          "type": "color",
+          "default": "#666180"
+        },
+        "duo": {
+          "title": "Duo",
+          "description": "Customize the accent color",
+          "order": 2,
+          "type": "color",
+          "default": "#FA70FF"
+        }
+      }
     }
   }
 }
