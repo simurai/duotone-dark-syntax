@@ -6,31 +6,9 @@ duo = ''
 
 module.exports =
   activate: (state) ->
-
-    # Change Preset
-    atom.config.observe 'duotone-dark-syntax.preset', (newValue) ->
-      root.classList.remove('theme-duotone-dark-syntax--custom-colors')
-      switch newValue
-        when "Dark Sky"
-          uno = 'hsl(250, 22%, 62%)'
-          duo = 'hsl(33, 86%, 74%)'
-        when "Dark Sea"
-          uno = 'hsl(212, 54%, 62%)'
-          duo = 'hsl(154, 92%, 70%)'
-        when "Dark Space"
-          uno = 'hsl(228, 69%, 76%)'
-          duo = 'hsl(345, 100%, 60%)'
-        when "Dark Forest"
-          uno = 'hsl(120, 28%, 70%)'
-          duo = 'hsl( 70, 99%, 76%)'
-        when "Dark Earth"
-          uno = 'hsl(352, 18%, 53%)'
-          duo = 'hsl(32, 100%, 69%)'
-        when "Custom"
-          root.classList.add('theme-duotone-dark-syntax--custom-colors')
-          uno = atom.config.get('duotone-dark-syntax.unoColor').toHexString()
-          duo = atom.config.get('duotone-dark-syntax.duoColor').toHexString()
-      setColors()
+    uno = atom.config.get('duotone-dark-syntax.unoColor').toHexString()
+    duo = atom.config.get('duotone-dark-syntax.duoColor').toHexString()
+    setColors()
 
     # Change Uno
     atom.config.onDidChange 'duotone-dark-syntax.unoColor', ({newValue, oldValue}) ->
@@ -43,7 +21,6 @@ module.exports =
       setColors()
 
   deactivate: ->
-    root.classList.remove('theme-duotone-dark-syntax--custom-colors')
     unsetColors()
 
 # Apply Colors -----------------------

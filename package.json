@@ -21,27 +21,17 @@
     "chroma-js": "1.1.1"
   },
   "configSchema": {
-    "preset": {
-      "title": "Color palette",
-      "description": "Choose one of the presets.",
-      "order": 1,
-      "type": [
-        "string"
-      ],
-      "enum": ["Dark Sky", "Dark Space", "Dark Sea", "Dark Forest", "Dark Earth", "Custom"],
-      "default": "Dark Sky"
-    },
     "unoColor": {
       "title": "Uno",
       "description": "Customize the main color",
-      "order": 2,
+      "order": 1,
       "type": "color",
       "default": "#666180"
     },
     "duoColor": {
       "title": "Duo",
       "description": "Customize the accent color",
-      "order": 3,
+      "order": 2,
       "type": "color",
       "default": "#FA70FF"
     }
