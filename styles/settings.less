@@ -1,0 +1,44 @@
+@import "colors";
+
+// Custom settings
+.theme-duotone-dark-syntax .settings-view {
+
+  [id="duotone-dark-syntax.color.uno"],
+  [id="duotone-dark-syntax.color.duo"] {
+    width: 2.75em;
+    margin-left: -3.5em;
+    position: absolute;
+    height: 4em;
+    border-radius: 4em;
+    &::-webkit-color-swatch {
+      border-radius: inherit;
+    }
+    &:hover {
+      border-color: hsla(0,0%,100%,.2);;
+    }
+    &:active {
+      border-color: hsla(0,0%,100%,0);;
+    }
+  }
+
+  [id="duotone-dark-syntax.color.uno"]:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+    width: 6px;
+    height: 9em;
+    border-radius: 1em;
+    background-image: linear-gradient(to bottom,
+      var(--uno-1) 12.5%,
+      var(--uno-2) 12.5%, var(--uno-2) 25%,
+      var(--uno-3) 25%,   var(--uno-3) 37.5%,
+      var(--uno-4) 37.5%, var(--uno-4) 50%,
+      var(--uno-5) 50%,   var(--uno-5) 62.5%,
+      var(--duo-1) 62.5%, var(--duo-1) 75%,
+      var(--duo-2) 75%,   var(--duo-2) 87.5%,
+      var(--duo-3) 87.5%
+    );
+  }
+
+}

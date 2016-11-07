@@ -2,5 +2,10 @@
 // DuoTone syntax theme
 
 @import (reference) "styles/syntax-variables";
+@import "styles/settings";
 @import 'styles/editor';
-@import 'styles/languages/_index';
+@import 'styles/palette';
+
+// This imports the language styles from the duotone-syntax npm package
+// If you test locally, make sure to first run `apm install`
+@import 'node_modules/duotone-syntax/styles/languages/_index';

@@ -15,7 +15,7 @@ atom-text-editor,
   }
 
   .cursor {
-    border-color: @syntax-cursor-color;
+    border-color: var(--accent);
     border-left-width: 2px;
   }
 
@@ -24,7 +24,7 @@ atom-text-editor,
   }
 
   .bracket-matcher .region {
-    border-bottom: 1px solid @syntax-accent;
+    border-bottom: 1px solid var(--accent);
   }
 
   .invisible-character {
@@ -81,10 +81,6 @@ atom-text-editor,
 
       &.cursor-line-no-selection {
         background-color: transparent;
-      }
-
-      .icon-right {
-        color: @syntax-text-color;
       }
 
       .icon-right {

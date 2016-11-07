@@ -12,7 +12,34 @@
   ],
   "repository": "https://github.com/simurai/duotone-dark-syntax",
   "license": "MIT",
+  "main": "lib/duotone",
   "engines": {
-    "atom": ">1.0.0"
+    "atom": ">1.9.0"
+  },
+  "dependencies": {
+    "duotone-syntax": "^2.0.0",
+    "chroma-js": "1.1.1"
+  },
+  "configSchema": {
+    "color": {
+      "title": "Custom Colors",
+      "type": "object",
+      "properties": {
+        "uno": {
+          "title": "Uno",
+          "description": "Customize the main color",
+          "order": 1,
+          "type": "color",
+          "default": "#817A9F"
+        },
+        "duo": {
+          "title": "Duo",
+          "description": "Customize the accent color",
+          "order": 2,
+          "type": "color",
+          "default": "#FFDC80"
+        }
+      }
+    }
   }
 }
