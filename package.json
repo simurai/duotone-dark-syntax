@@ -14,10 +14,10 @@
   "license": "MIT",
   "main": "lib/duotone",
   "engines": {
-    "atom": ">1.9.0"
+    "atom": ">=1.13.0 <2.0.0"
   },
   "dependencies": {
-    "duotone-syntax": "^2.0.0",
+    "duotone-syntax": "^2.1.0",
     "chroma-js": "1.1.1"
   },
   "configSchema": {
