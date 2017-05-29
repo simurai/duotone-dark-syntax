@@ -1,3 +1,5 @@
+> Note: This theme is __deprecated__. Take a look at [tone-syntax](https://atom.io/packages/tone-syntax) that is somewhat similar.
+
 # DuoTone dark
 
 A double-hue syntax theme for Atom.
