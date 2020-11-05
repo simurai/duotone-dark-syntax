@@ -18,6 +18,7 @@ DuoTone themes use only 2 hues (8 shades in total). It __tones down__ less impor
   src="https://cloud.githubusercontent.com/assets/378023/6996874/aee76b40-dbdd-11e4-95e1-a40258a50c26.png"
   srcset="https://cloud.githubusercontent.com/assets/378023/6996875/b2160e02-dbdd-11e4-913e-7dc006437d94.png 1560w">
 
+> The UI theme used in the screenshots is [One Dark](https://atom.io/themes/one-dark-ui), which comes bundled with Atom.
 
 ## Language support
 
